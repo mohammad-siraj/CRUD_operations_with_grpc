@@ -1,0 +1,22 @@
+version: '3.0'
+
+services:
+  postgres:
+    container_name: crud_grpc
+    image: postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: root
+      PGDATA: /data/postgres
+    volumes:
+       - $PWD/postgres:/data/crud_grpc
+    ports:
+      - "8800:5432"
+volumes:
+  postgres:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: $PWD/database
