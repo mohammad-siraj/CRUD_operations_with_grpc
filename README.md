@@ -4,7 +4,7 @@
   </a>
   <h3 align="center">CRUD_operations_with_grpc</h3>
   <p align="center">
-    CRUD api implementation in golang with gorilla/mux for car database hosted in a dokcer container (Postgres)  
+    CRUD api implementation in golang with grpc for car database hosted in a dokcer container (Postgres)  
     <br />
     <br />
   </p>
